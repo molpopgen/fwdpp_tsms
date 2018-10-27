@@ -33,4 +33,16 @@ digraph d {
     g3 -> {m2,m5} [color="purple"]
     g4 -> {m0,m3}
 
+    subgraph cluster_nodes
+    {
+    n0 n1 n2 n3 n4 n5 n6
+    label="Nodes"
+    }
+
+    n0 -> m1 ;
+    n0 -> m4
+    n4 -> m1
+    n5 -> {m2,m5}
+    n6 -> m3 ;
+
 }
