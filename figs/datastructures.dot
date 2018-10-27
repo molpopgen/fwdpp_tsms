@@ -1,0 +1,36 @@
+digraph d {
+    graph[rankdir=LR]
+
+    subgraph cluster_diploids {
+    node [shape=oval]
+    0 
+    1
+    label="Diploids"
+    }
+
+    subgraph cluster_gametes {
+    node [shape=box]
+    g0
+    g1
+    g2
+    g3
+    g4
+    label="Gametes"
+    }
+
+    0 -> {g0, g1}
+    1 -> {g2, g3}
+
+    subgraph cluster_mutations {
+    node [style=filled]
+    m0  m1 m2  m3  m4  m5
+    label="Mutations"
+    }
+
+    g0 -> {m1,m2,m4}
+    g1 -> {m2,m5}
+    g2 -> {m2,m2,m5}
+    g3 -> {m1,m4,m5}
+    g4 -> {m0,m3}
+
+}
