@@ -3,6 +3,5 @@
 
 all: datastructures.pdf
 
-datastructures.pdf: datastructures.dot
 
 
