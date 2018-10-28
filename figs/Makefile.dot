@@ -1,0 +1,8 @@
+%.pdf : %.dot
+	dot -Tpdf $< -o $@
+
+all: datastructures.pdf
+
+datastructures.pdf: datastructures.dot
+
+
