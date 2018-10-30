@@ -33,21 +33,21 @@ digraph d {
     g3 -> {m2,m5} [color="purple"]
     g4 -> {m0,m3}
 
-    subgraph cluster_nodes
-    {
-    node [shape=none];
-    n0 [label="0"];
-    n1 [label="1"];
-    n2 [label="2"];
-    n3 [label="3"];
-    n4 [label="4"];
-    n5 [label="5"];
-    n6 [label="6"];
-    label="Nodes"
-    }
+    //subgraph cluster_nodes
+    //{
+    //node [shape=none];
+    //n0 [label="0"];
+    //n1 [label="1"];
+    //n2 [label="2"];
+    //n3 [label="3"];
+    //n4 [label="4"];
+    //n5 [label="5"];
+    //n6 [label="6"];
+    //label="Nodes"
+    //}
 
-    m1 -> n4 [constraint=false];
-    m4 ->n0 ;
-    m2 -> n5;
-    m5 -> n5[constraint=false];
+    //m1 -> n4 [constraint=false];
+    //m4 ->n0 ;
+    //m2 -> n5;
+    //m5 -> n5[constraint=false];
 }
