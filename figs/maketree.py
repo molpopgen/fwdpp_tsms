@@ -27,7 +27,6 @@ ts = tables.tree_sequence()
 
 t = next(ts.trees())
 
-t.draw(path="tree.svg",mutation_labels={0:'m1',1:'m2',2:'m4',3:'m5'},
-        node_labels={0:'g0',1:'g1',2:'g2',3:'g3',4:'4',5:'5',6:'6'})
-
-
+fig=t.draw(path="tree.svg", mutation_labels={0: 'm1', 1: 'm2', 2: 'm4', 3: 'm5'},
+       node_labels={0: 'g0', 1: 'g1', 2: 'g2', 3: 'g3', 4: '4', 5: '5', 6: '6'},
+       height=200,width=200)
