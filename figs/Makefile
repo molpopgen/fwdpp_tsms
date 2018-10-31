@@ -4,7 +4,7 @@
 %.pdf : %.svg
 	convert -density 300 $< $@
 
-all: datastructures.pdf tree.pdf
+all: datastructures.pdf tree.pdf tables.pdf
 
 datastructures.pdf: datastructures.dot
 
@@ -14,5 +14,5 @@ tree.svg: maketree.py
 
 tree.pdf: tree.svg
 
-
+tables.pdf: tables.dot
 
